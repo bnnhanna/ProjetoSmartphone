@@ -2,13 +2,13 @@ namespace DesafioPOO.Models
 {
     public abstract class Smartphone
     {
-         
+        //encapsulamento 
         private string Numero { get; set; }
         private string Modelo { get; set; }
         public string IMEI { get; set; }
         public int Memoria { get; set; }
        
-      
+       //construtor
         public Smartphone(string numero, string modelo, string imei, int memoria)
         {
             Numero = numero;
@@ -17,7 +17,7 @@ namespace DesafioPOO.Models
             Memoria = memoria;
         
         }
-
+        //método
         public void Ligar()
         {
             Console.WriteLine("Acessando rede de comunicação");
@@ -28,7 +28,7 @@ namespace DesafioPOO.Models
         {
             Console.WriteLine($"Recebendo ligação... Meu numero {Numero}");
         }
-
+        //poliformismo
         public abstract void InstalarAplicativo(string nomeApp, string nomeLoja);
     }
 }
