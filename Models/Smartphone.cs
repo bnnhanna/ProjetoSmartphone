@@ -28,7 +28,7 @@ namespace DesafioPOO.Models
         {
             Console.WriteLine($"Recebendo ligação... Meu numero {Numero}");
         }
-        //poliformismo
+        //polimorfismo
         public abstract void InstalarAplicativo(string nomeApp, string nomeLoja);
     }
 }
