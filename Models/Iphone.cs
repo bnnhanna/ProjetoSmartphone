@@ -1,3 +1,5 @@
+using System.Security.Cryptography;
+
 namespace DesafioPOO.Models
 {
     
@@ -20,11 +22,11 @@ namespace DesafioPOO.Models
             Console.WriteLine($"Instalando o aplicativo {nomeApp} pela loja de aplicativos {ModeloIphone}.");
         }
 
-        public void ImprimirInformacoes()
+        public override string ToString()
         {
-            Console.WriteLine($"Smartphone: {ModeloIphone}");
-            Console.WriteLine($"Recebendo ligação...");
-            Console.WriteLine($"Instalando o Twitter");
+           return $"Smartphone: {ModeloIphone}" +
+            $"Recebendo ligação..." +
+            $"Instalando o Twitter";
         }
     }
 }

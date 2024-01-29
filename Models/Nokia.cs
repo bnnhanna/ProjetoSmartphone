@@ -20,11 +20,11 @@ namespace DesafioPOO.Models
             Console.WriteLine($"Instalando o aplicativo {nomeApp} pela loja de aplicativos do {ModeloNokia}.");
         }
             
-        public void ImprimirInformacoes()
+        public override string ToString()
         {
-            Console.WriteLine($"Smartphone: {ModeloNokia}");
-            Console.WriteLine($"Ligando...");
-            Console.WriteLine($"Instalando o JogoDaCobrinha");
+           return $"Smartphone: {ModeloNokia}" +
+            $"Ligando..." +
+            $"Instalando o JogoDaCobrinha";
         }
     }
 }

@@ -18,6 +18,8 @@ namespace DesafioPOO
             iphone.ReceberLigacao();
             iphone.InstalarAplicativo("Twitter", "Apple Store");
            
+           Console.WriteLine(nokia);
+           Console.WriteLine(iphone);
             
 
             

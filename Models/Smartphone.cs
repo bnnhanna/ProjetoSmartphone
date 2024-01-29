@@ -2,22 +2,23 @@ namespace DesafioPOO.Models
 {
     public abstract class Smartphone
     {
-         
-        private string Numero { get; set; }
-        private string Modelo { get; set; }
-        public string IMEI { get; set; }
-        public int Memoria { get; set; }
+        //encapsulamento
+        public string Numero { get; set; }
+        protected string Modelo { get; set; }
+        protected string IMEI { get; set; }
+        protected int Memoria { get; set; }
        
-
+        //construtor
         public Smartphone(string numero, string modelo, string imei, int memoria)
         {
             Numero = numero;
             Modelo = modelo;
             IMEI = imei;
             Memoria = memoria;
-            // tentar criar variavel receber ligação
-        }
+            
+         }
 
+        //método       
         public void Ligar()
         {
             Console.WriteLine("Acessando rede de comunicação");
@@ -29,6 +30,9 @@ namespace DesafioPOO.Models
             Console.WriteLine($"Recebendo ligação... Meu numero {Numero}");
         }
 
+        //polimorfismo
         public abstract void InstalarAplicativo(string nomeApp, string nomeLoja);
+        
     }
+    
 }
